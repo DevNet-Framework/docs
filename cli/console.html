@@ -153,10 +153,10 @@ Hello World!
                </code></pre>
                <h3>Command line arguments</h3>
                <p>
-                  At the runtime, the input arguments are passed to the parameter <code>$args</code> of the static method <code>main(array $args)</code> in form of indexed array, and to handle these arguments just handle the values of the parameter <code>$args</code>.
+                  At the runtime, the input arguments are passed to the parameter <code>$args</code> of the static method <code>main(array $args)</code> in form of an indexed array, and to handle these arguments just handle the values of the parameter <code>$args</code>.
                </p>
                <p>
-                  The following example, shows a simple code that handle the input arguments, it stores the value of the first argument of the array <code>$args</code> into the variable <code>$name</code>, using Null Coalescing operator, if the it is not set, it will set to the default value <code>"world"</code>, then pass it to the static method <code>write(string $string, ?array arguments)</code> to write the content <samp>Hello {name}</samp> to terminal, using formatted string pattern.
+                  The following example, shows a simple code that handles the input arguments, it stores the value of the first argument of the array <code>$args</code> into the variable <code>$name</code>, using Null Coalescing operator, if it is not set, it will set to the default value <code>"world"</code>, then pass it to the static method <code>write(string $string, ?array arguments)</code> to write the content <samp>Hello {name}</samp> to the terminal, using formatted string pattern.
                </p>
                <pre><code class="language-php">
                   &lt;?php
@@ -186,10 +186,10 @@ Hello Job!
                </blockquote>
                <h3>Console input</h3>
                <p>
-                  The static method <code>Console::readLine(?string $value)</code> reads the next line of characters from the console input stream, and returns it as a string data, it will pause the program execution, until the user type a data and presses the Enter key, optionally can write as text befor reading the input user.
+                  The static method <code>Console::readLine(?string $value)</code> reads the next line of characters from the console input stream, and returns it as string data, it will pause the program execution, until the user types a data and presses the Enter key, optionally can write as text before reading the input user.
                </p>
                <p>
-                  The following example code, displays a prompt in the terminal asking the user's name, and after the user input his name followed by the Enter key, it will return a hello message to the user by his name.
+                  The following example code, displays a prompt in the terminal asking the user's name, and after the user inputs his name followed by the Enter key, it will return a hello message to the user by his name.
                </p>
                <pre><code class="language-php">
                   &lt;?php
@@ -220,7 +220,7 @@ Hello Job!
                   The <code>Console</code> class has the static methodes <code>foregroundColor(int $colorCode)</code> and <code>backgroundColor(int $colorCode)</code> to set the foreground and background color of the console output respectively, and the static method <code>ResetColor()</code> to restore the output system to the original console color.
                </p>
                <p>
-                  The <code>ConsoleColor</code> class has a list of color constants that are supported by the system, each constant hold a color code value, this will help to set the color by name without need to remember the color code, like in the folowing example:
+                  The <code>ConsoleColor</code> class has a list of color constants that are supported by the system, each constant hold a color code value, this will help to set the color by name without the need to remember the color code, like in the following example:
                </p>
                <pre><code class="language-php">
                   &lt;?php
